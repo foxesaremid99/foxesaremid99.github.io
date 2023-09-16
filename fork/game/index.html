@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Warninn.github.io</title>
+    <link rel="stylesheet" href="/fork/0/assets/css/games.css" />
+    <link rel="stylesheet" href="/fork/game/style.css">
+    <link rel="shortcut icon" href="/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <button class="menu-item" onclick="window.location.href='/'"><strong>Warninn.github.io</strong></button>
+        </div>
+        <nav class="menu">
+            <button class="menu-item" onclick="window.location.href='/fork/0/g/'">Games</button>
+            <button class="menu-item" onclick="window.location.href='/fork/0/a/'">
+                Apps
+            </button>
+            <button class="menu-item" onclick="window.location.href='/fork/0/ruffle/'">Flash Opener</button>
+        </nav>
+    </header>
+    <a href="javascript:window.location.href='/fork/0/g/';"><button class="back">
+            &lt;&mdash; Go back
+        </button></a>
+    <div class="center-container">
+        <div id="embed-container">
+            <iframe src="" frameborder="0" allowfullscreen id="content" scrolling="no"></iframe>
+            <a href="javascript:enterFullscreen();" title="Enter Fullscreen (F12), Exit Fullscreen (ESC)"><button
+                    id="fullscreen-button">
+                    <?xml version="1.0" ?><svg height="18px" version="1.1" viewBox="0 0 14 14" width="14px"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+                        xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <title />
+                        <desc />
+                        <defs />
+                        <g fill="none" fill-rule="evenodd" id="Page-1" stroke="none" stroke-width="1">
+                            <g fill="#fff" id="Core" transform="translate(-215.000000, -257.000000)">
+                                <g id="fullscreen" transform="translate(215.000000, 257.000000)">
+                                    <path
+                                        d="M2,9 L0,9 L0,14 L5,14 L5,12 L2,12 L2,9 L2,9 Z M0,5 L2,5 L2,2 L5,2 L5,0 L0,0 L0,5 L0,5 Z M12,12 L9,12 L9,14 L14,14 L14,9 L12,9 L12,12 L12,12 Z M9,0 L9,2 L12,2 L12,5 L14,5 L14,0 L9,0 L9,0 Z"
+                                        id="Shape" />
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                </button></a>
+            <span class="bar"><a href="https://warninn.github.io" target="_blank">
+                    <p class="game-title">Warninn.github.io<img src="/favicon.svg" draggable="false"></p>
+                </a><p class="games-title">|<p id="game-title"></p></p></span>
+        </div>
+    </div>
+    <!-- <center style="margin: 1em;"><a id="bug.referer"
+        onclick="alert('Coming Soon...')"><button class="button3d">Report a bug</button></a></center> -->
+    <script>
+        function enterFullscreen() {
+            const iframe = document.querySelector('iframe');
+            if (iframe.requestFullscreen) {
+                iframe.requestFullscreen();
+            } else if (iframe.mozRequestFullScreen) {
+                iframe.mozRequestFullScreen();
+            } else if (iframe.webkitRequestFullscreen) {
+                iframe.webkitRequestFullscreen();
+            } else if (iframe.msRequestFullscreen) {
+                iframe.msRequestFullscreen();
+            }
+        }
+    </script>
+    <script>
+        // var currentURL = window.location.href;
+
+        // var linkElement = document.getElementById("bug.referer");
+        // //  var linkElement1 = linkElement.getAttribute("href");
+        // //  console.log(linkElement1)
+
+        // linkElement.href += currentURL;
+    </script>
+        <script>
+            function changeText(textMappings) {
+                var query = window.location.search.substring(1);
+                var queryParams = query.split('&');
+                var dynamicText = 'Error fetching json';
+    
+                for (var i = 0; i < queryParams.length; i++) {
+                    var param = queryParams[i];
+                    if (textMappings[param]) {
+                        dynamicText = textMappings[param];
+                        break;
+                    }
+                }
+    
+                document.getElementById('game-title').textContent = dynamicText;
+            }
+    
+            fetch('game-title.json')
+                .then(response => response.json())
+                .then(data => {
+                    changeText(data);
+                })
+                .catch(error => {
+                    console.log('Error fetching game title', error);
+                });
+        </script>
+    <script src="/js/main.js"></script>   
+    <script src="main.js"></script>
+</body>
+
+</html>
