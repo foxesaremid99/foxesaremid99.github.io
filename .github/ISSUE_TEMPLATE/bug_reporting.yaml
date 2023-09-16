@@ -1,0 +1,42 @@
+name: Report a Bug
+description: File a Bug to be fixed ⚒️
+title: "[Bug Reporting]: <title>"
+labels:
+  - Bug-Report
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Rating
+      description: You do not have to fill this out. But overall how do you rate nate-games?
+      placeholder: 0-10
+    validations:
+      required: false
+  - type: input
+    id: url
+    attributes:
+      label: Page URL
+      description: Where did the Error occur?
+      placeholder: https://example.com/home
+    validations:
+      required: true
+  - type: dropdown
+    id: type
+    attributes:
+      label: Error Type
+      description: What type of Error Happened?
+      options:
+        - Wrong <title> Name
+        - Wrong Favicon
+        - No Game Page
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Explain
+      description: If you didn't just type "None"
+      placeholder: If you chose Other as an Error type please describe the issue.
+    validations:
+      required: true
