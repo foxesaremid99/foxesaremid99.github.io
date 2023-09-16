@@ -3,6 +3,8 @@ description: Submit a Link you deployed
 title: "[Link Submission]: <title>"
 labels:
   - Link-Submission
+  assignees: 
+  - hypacker
 body:
   - type: input
     id: name

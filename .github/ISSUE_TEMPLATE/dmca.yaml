@@ -3,6 +3,8 @@ description: Remove a game... 😔
 title: "[DMCA]: <title>"
 labels:
   - DMCA
+  assignees: 
+  - hypacker
 body:
   - type: input
     id: accept

@@ -3,6 +3,8 @@ description: Add a game to be added to the website.
 title: "[Game Recommendation]: <title>"
 labels:
   - Add-Game
+  assignees: 
+  - hypacker
 body:
   - type: input
     id: rating

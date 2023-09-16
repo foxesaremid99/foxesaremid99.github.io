@@ -3,6 +3,8 @@ description: File a Bug to be fixed ⚒️
 title: "[Bug Reporting]: <title>"
 labels:
   - Bug-Report
+  assignees: 
+  - hypacker
 body:
   - type: input
     id: name
