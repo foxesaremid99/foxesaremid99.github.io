@@ -1,5 +1,5 @@
-// Made by 3kh0
-// https://github.com/3kh0/chill-radio
+// Made by Hypackel
+// https://github.com/Hypackel/chill-radio
 
 (this.webpackJsonpcoderadio = this.webpackJsonpcoderadio || []).push([
     [0],
@@ -60,7 +60,7 @@
                                     id: "nav",
                                     children: [
                                         { href: "/", text: "Home" },
-                                        { href: "https://github.com/3kh0/chill-radio", text: "GitHub" },
+                                        { href: "https://github.com/Hypackel/chill-radio", text: "GitHub" },
                                     ].map(function (t, e) {
                                         return Object(k.jsx)("li", { children: Object(k.jsx)("a", { href: t.href, rel: "noopener noreferrer", target: "_blank", children: t.text }) }, e);
                                     }),

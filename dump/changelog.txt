@@ -270,7 +270,7 @@ Long time no see! Here are some amazing updates!
 + Added Ducklife 
 ------------------------------------------------------------
 Mar, 8
-+ Added TAB CLOAK!!! --> https://3kh0.github.io/dump/tab-cloak.html
++ Added TAB CLOAK!!! --> https://Hypackel.github.io/dump/tab-cloak.html
 + Added a better minesweeper (thx u4pak!)
 + Added BitLife
 + Added YoHoHo.io bookmarklet hack to bookmarklets list.

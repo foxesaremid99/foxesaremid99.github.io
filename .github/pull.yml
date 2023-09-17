@@ -1,5 +1,5 @@
 version: "1"
 rules:
   - base: master
-    upstream: 3kh0:main
+    upstream: Hypackel:main
     mergeMethod: hardreset
