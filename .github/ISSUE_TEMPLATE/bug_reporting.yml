@@ -3,7 +3,7 @@ description: File a Bug to be fixed ⚒️
 title: "[Bug Reporting]: <title>"
 labels:
   - Bug-Report
-  assignees: 
+assignees:
   - hypacker
 body:
   - type: input
@@ -28,10 +28,10 @@ body:
       label: Error Type
       description: What type of Error Happened?
       options:
-        - Wrong <title> Name
-        - Wrong Favicon
-        - No Game Page
-        - Other
+        - "Wrong <title> Name"
+        - "Wrong Favicon"
+        - "No Game Page"
+        - "Other"
     validations:
       required: true
   - type: textarea

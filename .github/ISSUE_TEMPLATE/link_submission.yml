@@ -1,16 +1,16 @@
-name: Link Submission 🔗
-description: Submit a Link you deployed
+name: "Link Submission 🔗"
+description: "Submit a Link you deployed"
 title: "[Link Submission]: <title>"
 labels:
   - Link-Submission
-  assignees: 
+assignees:
   - hypacker
 body:
   - type: input
     id: name
     attributes:
       label: Rating
-      description: You do not have to fill this out. But overall how do you rate warninn games?
+      description: "You do not have to fill this out. But overall how do you rate warninn games?"
       placeholder: 0-10
     validations:
       required: false
@@ -18,7 +18,7 @@ body:
     id: url
     attributes:
       label: URL
-      description: What is the URL? Paste 📋 it Below.
+      description: "What is the URL? Paste 📋 it Below."
       placeholder: https://example.com/
     validations:
       required: true
@@ -26,22 +26,22 @@ body:
     id: type
     attributes:
       label: Service
-      description: What Deployment service did you use?
+      description: "What Deployment service did you use?"
       options:
-        - GitHub Pages
-        - Cloudflare Pages
-        - Netlify
-        - Vercel
-        - Railway
-        - Render
-        - Replit
+        - "GitHub Pages"
+        - "Cloudflare Pages"
+        - "Netlify"
+        - "Vercel"
+        - "Railway"
+        - "Render"
+        - "Replit"
     validations:
       required: true
   - type: textarea
     id: description
     attributes:
       label: Comment
-      description: If you have another thing to say about this, leave a comment
+      description: "If you have another thing to say about this, leave a comment"
       placeholder: Lorem ipsum dolor sit amet...
     validations:
       required: false

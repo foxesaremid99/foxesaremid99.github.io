@@ -1,16 +1,16 @@
 name: DMCA
-description: Remove a game... 😔
+description: "Remove a game... 😔"
 title: "[DMCA]: <title>"
 labels:
   - DMCA
-  assignees: 
+assignees:
   - hypacker
 body:
   - type: input
     id: accept
     attributes:
       label: Please understand.
-      description: The GPL-3.0 License will provide copyleft unless you use different license other than GPL-3.0. We still like to understand why though!
+      description: "The GPL-3.0 License will provide copyleft unless you use a different license other than GPL-3.0. We still like to understand why though!"
       placeholder: yes/no
     validations:
       required: true
@@ -18,7 +18,7 @@ body:
     id: dmca-game
     attributes:
       label: Game
-      description: What game are you removing.
+      description: "What game are you removing."
       placeholder: Stumble Guys
     validations:
       required: true
@@ -26,13 +26,13 @@ body:
     id: proof
     attributes:
       label: Submit Proof
-      description: Prove that you own this game
+      description: "Prove that you own this game"
     validations:
       required: true
   - type: textarea
     id: permission
     attributes:
       label: Permission
-      description: Please provide details confirming that you have the necessary permissions to grant us the right to use your game. Describe how you own the game and how you intend to provide us with permission. Your cooperation is appreciated!
+      description: "Please provide details confirming that you have the necessary permissions to grant us the right to use your game. Describe how you own the game and how you intend to provide us with permission. Your cooperation is appreciated!"
     validations:
       required: false
