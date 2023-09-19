@@ -19,8 +19,8 @@ function setIcon() {
         window.document.getElementsByTagName('head')[0].appendChild(link);
     }   
     if (icon == "Default") {
-        link.href = '/favicon.svg';
-        document.title = "Home | Warninn"
+        link.href = '/favicon.png';
+        document.title = "Home | Hypackel"
     }
     if (icon == "Schoology") {
         link.href = 'https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.ico';
@@ -59,7 +59,7 @@ function setIcon() {
         document.title = "Classes"
     }
     if (icon == "NoRedInk") {
-        link.href = 'https://www.noredink.com/favicon.svg';
+        link.href = 'https://www.noredink.com/favicon.png';
         document.title = "Student Home | NoRedInk"
     }
     if (icon == "Lexia Core5") {
@@ -67,7 +67,7 @@ function setIcon() {
         document.title = "Lexia Core5"
     }
     if (icon == "Lexia PowerUp") {
-        link.href = 'https://www.lexiapowerup.com/favicon.svg';
+        link.href = 'https://www.lexiapowerup.com/favicon.png';
         document.title = "Lexia PowerUp"
     }
     if (icon == "Mathspace") {
@@ -75,7 +75,7 @@ function setIcon() {
         document.title = "Mathspace"
     }
     if (icon == "Kahoot") {
-        link.href = 'https://assets-cdn.kahoot.it/controller/v2/favicon.svg';
+        link.href = 'https://assets-cdn.kahoot.it/controller/v2/favicon.png';
         document.title = "Enter Game PIN - Kahoot!"
     }
 }

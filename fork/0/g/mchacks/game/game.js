@@ -316,7 +316,7 @@ if (ENVIRONMENT_IS_WEB || ENVIRONMENT_IS_WORKER) {
     xhr.send(null);
   };
 
-  Module['setWindowTitle'] = function(title) { document.title = "Minecraft Classic Hacks | nate-games" };
+  Module['setWindowTitle'] = function(title) { document.title = "Minecraft Classic Hacks | Hypackel" };
 } else
 {
 }
@@ -5064,7 +5064,7 @@ function copyTempDouble(ptr) {
     }
 
   function _interop_SetPageTitle(title) {
-      document.title = "Minecraft Classic Hacks | nate-games";
+      document.title = "Minecraft Classic Hacks | Hypackel";
     }
 
   function _interop_ShowDialog(title, msg) {

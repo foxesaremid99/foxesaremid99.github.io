@@ -9,19 +9,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nate-games/nate-games.github.io.git"
+    "url": "git+https://github.com/Hypackel/Hypackel.github.io.git"
   },
   "keywords": [
     "static",
     "template",
     "codesandbox"
   ],
-  "author": "nate-games",
+  "author": "Hypackel",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/nate-games/nate-games.github.io/issues"
+    "url": "https://github.com/Hypackel/Hypackel.github.io/issues"
   },
-  "homepage": "https://github.com/nate-games/nate-games.github.io#readme",
+  "homepage": "https://github.com/Hypackel/Hypackel.github.io#readme",
   "devDependencies": {
     "serve": "^11.2.0"
   }

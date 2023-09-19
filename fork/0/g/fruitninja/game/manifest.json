@@ -14,7 +14,7 @@
     <div class="main-wrapper" role="main">
     <div class="main-content">
         <h1 class="zone-name-title h1">
-            <img class="heading-favicon" src="/favicon.svg"
+            <img class="heading-favicon" src="/favicon.png"
                  onerror="this.onerror=null;this.parentNode.removeChild(this)">
             yell0wsuit.page
         </h1>

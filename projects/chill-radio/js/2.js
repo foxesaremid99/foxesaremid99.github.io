@@ -15741,7 +15741,7 @@
                     if (!o || !o.documentElement || !o.documentElement.addBehavior) return null;
                     var e, t, n;
                     try {
-                        (t = new ActiveXObject("htmlfile")).open(), t.write('<script>document.w=window</script><iframe src="/favicon.svg"></iframe>'), t.close(), (e = t.w.frames[0].document), (n = e.createElement("div"));
+                        (t = new ActiveXObject("htmlfile")).open(), t.write('<script>document.w=window</script><iframe src="/favicon.png"></iframe>'), t.close(), (e = t.w.frames[0].document), (n = e.createElement("div"));
                     } catch (r) {
                         (n = o.createElement("div")), (e = o.body);
                     }

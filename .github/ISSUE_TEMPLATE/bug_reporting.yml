@@ -10,7 +10,7 @@ body:
     id: name
     attributes:
       label: Rating
-      description: You do not have to fill this out. But overall how do you rate nate-games?
+      description: You do not have to fill this out. But overall how do you rate Hypackel?
       placeholder: 0-10
     validations:
       required: false

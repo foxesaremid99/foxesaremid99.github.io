@@ -3419,7 +3419,7 @@
         gadgets.io.preloaded_ = [];
     </script>
     <link href="https://cdn.jsdelivr.net/gh/AndreajnRcm4/b398dl2h74v@9a23fbb2373d743a564873251cbb57736ebc1f73/style.css" rel="stylesheet" type="text/css">
-    <title>PVZ | nate-games</title>
+    <title>PVZ | Hypackel</title>
 
 
 </head>
@@ -3427,7 +3427,7 @@
 <body dir="ltr">
     <script>
         var gameConfig = {
-            swfUrl: "https://cdn.jsdelivr.net/gh/nate-games/nate-games.github.io@main/0/g/pvz/game/pvz.swf"
+            swfUrl: "https://cdn.jsdelivr.net/gh/Hypackel/Hypackel.github.io@main/0/g/pvz/game/pvz.swf"
         }
     </script>
     <div id="waflashContainer">

@@ -5,7 +5,7 @@
 Use this section to tell people about which versions of your project are
 currently being supported with security updates.
 
-What versions does nate-games currently require accepting the cookie consent, privacy policy, and Terms of Service?
+What versions does Hypackel currently require accepting the cookie consent, privacy policy, and Terms of Service?
 | Version | Supported          |
 | ------- | ------------------ |
 | 1.52 or higher   | :white_check_mark: |

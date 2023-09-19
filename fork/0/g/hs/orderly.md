@@ -1,4 +1,4 @@
-### Orderly, nate-games
+### Orderly, Hypackel
 
 - 1. Breaking the Bank.
 - 2. Escaping the Prison.

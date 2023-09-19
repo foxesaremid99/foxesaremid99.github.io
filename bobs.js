@@ -45,7 +45,7 @@ function setIcon(){
 		document.title = "Bob's Shack"
 	}
 	if (icon=="Schoology"){
-		link.href = 'https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.svg';
+		link.href = 'https://asset-cdn.schoology.com/sites/all/themes/schoology_theme/favicon.png';
 		document.title = "Home | Schoology"
 	}
 	if (icon=="Google Docs"){
@@ -53,7 +53,7 @@ function setIcon(){
 		document.title = "Google Docs"
 	}
  if (icon=="Desmos"){
-		link.href = 'https://www.desmos.com/assets/img/apps/scientific/favicon.svg';
+		link.href = 'https://www.desmos.com/assets/img/apps/scientific/favicon.png';
 		document.title = "Desmos | Scientific Calculator"
 	}
 	if (icon=="Desmos graphing"){

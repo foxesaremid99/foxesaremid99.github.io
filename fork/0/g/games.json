@@ -292,12 +292,12 @@
   },
   {
     "url": "./fnaf-2/",
-    "imageSrc": "./fnaf-2/game/splash.webp",
+    "imageSrc": "/fork/0/g/fnaf-2/game/splash.webp",
     "name": "FNAF 2"
   },
   {
     "url": "./fnaf-2hacks/",
-    "imageSrc": "https://raw.githubusercontent.com/nate-games/ng-assets/main/fnaf-2hacks/game/splash.png",
+    "imageSrc": "/fork/0/g/fnaf-2hacks/splash.png",
     "name": "FNAF 2 (HACKS)"
   },
   {
@@ -537,7 +537,7 @@
   },
   {
     "url": "/fork/0/e/Nintendo 64/Mario Kart 64/",
-    "imageSrc": "/0/e/Nintendo 64/Mario Kart 64/game/splash.jpg",
+    "imageSrc": "/fork/0/e/Nintendo 64/Mario Kart 64/game/splash.jpg",
     "name": "Mario Kart 64"
   },
   {
@@ -562,7 +562,7 @@
   },
   {
     "url": "/fork/0/g/Undertale/",
-    "imageSrc": "https://raw.githubusercontent.com/nate-games/ng-assets/702efb7d8e243c74bcb312288bb2ae8de80b2c60/Undertale/game/splash2.jpg",
+    "imageSrc": "/fork/0/g/Undertale/splash2.jpg",
     "name": "Undertale"
   },
   {
@@ -657,17 +657,17 @@
   },
   {
     "url": "./cut-the-rope/",
-    "imageSrc": "./cut-the-rope/game/rope.png",
+    "imageSrc": "./cut-the-rope/rope.png",
     "name": "Cut the Rope"
   },
   {
     "url": "./ctr-hg/",
-    "imageSrc": "./cut-the-rope/game/holiday-gift/k9aatx1o.bmp",
+    "imageSrc": "./ctr-hg/game/holiday-gift/k9aatx1o.bmp",
     "name": "Cut the Rope: Holiday Gift"
   },
   {
     "url": "./ctr-time/",
-    "imageSrc": "./cut-the-rope/game/time-travel/time.png",
+    "imageSrc": "./ctr-time/game/time.png",
     "name": "Cut the Rope: Time Travel"
   },
   {

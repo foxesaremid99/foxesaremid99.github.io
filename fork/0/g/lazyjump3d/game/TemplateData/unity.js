@@ -52,7 +52,7 @@ var unityConfig = {
     frameworkUrl: buildUrl + "/dist.framework.js.unityweb",
     codeUrl: buildUrl + "/dist.wasm.unityweb",
     streamingAssetsUrl: "StreamingAssets",
-    companyName: "nate-games",
+    companyName: "Hypackel",
     productName: "Lazy Jump",
     productVersion: "1.0"
 }

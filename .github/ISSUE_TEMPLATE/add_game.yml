@@ -10,7 +10,7 @@ body:
     id: rating
     attributes:
       label: Rating
-      description: You do not have to fill this out. But overall how do you rate warninn games?
+      description: You do not have to fill this out. But overall how do you rate Hypackel games?
       placeholder: 0-10
     validations:
       required: false

@@ -99,7 +99,7 @@ http://orteil.dashnet.org/cookieclicker/img/factoryBackground.png
 http://orteil.dashnet.org/cookieclicker/img/farm.png
 http://orteil.dashnet.org/cookieclicker/img/farmBackground.png
 http://orteil.dashnet.org/cookieclicker/img/farmerGrandma.png
-http://orteil.dashnet.org/cookieclicker/img/favicon.svg
+http://orteil.dashnet.org/cookieclicker/img/favicon.png
 http://orteil.dashnet.org/cookieclicker/img/featherLeft.png
 http://orteil.dashnet.org/cookieclicker/img/featherRight.png
 http://orteil.dashnet.org/cookieclicker/img/filler.png

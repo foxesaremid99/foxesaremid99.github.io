@@ -1929,7 +1929,7 @@ Game.Launch=function()
 		'<div class="title">Oops. Wrong address!</div>'+
 		'<div>It looks like you\'re accessing Cookie Clicker from another URL<br>'+
 		'You can <a href="./" target="_blank">play Cookie Clicker over here</a>!<br>'+
-		'<small>Thanks for using nate-games!</small></div>';
+		'<small>Thanks for using Hypackel!</small></div>';
 	}
 	Game.timedout=false;
 	Game.Timeout=function()

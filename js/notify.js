@@ -20,7 +20,7 @@ async function send() {
     }
 
     var clicklink = window.location.origin + jsdata.link
-    var img = "/favicon.svg";
+    var img = "/favicon.png";
     var text = "A new game has been released, " + jsdata.title + ". Click here to play it now!";
     var notif = new Notification("New game added!", { body: text, icon: img });
     localStorage.setItem("gamecode", jsdata.gamecode);
