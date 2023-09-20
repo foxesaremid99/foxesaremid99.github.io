@@ -54,6 +54,10 @@ function setIcon() {
         link.href = 'https://www.desmos.com/assets/img/apps/graphing/favicon.ico';
         document.title = "Desmos | Graphing Calculator"
     }
+    if (icon == "Google Drive") {
+        link.href = 'https://ssl.gstatic.com/images/branding/product/2x/drive_2020q4_32dp.png';
+        document.title = "My Drive - Google Drive"
+    }
     if (icon == "Google classroom") {
         link.href = 'https://ssl.gstatic.com/classroom/favicon.png';
         document.title = "Classes"
@@ -75,7 +79,7 @@ function setIcon() {
         document.title = "Mathspace"
     }
     if (icon == "Kahoot") {
-        link.href = 'https://assets-cdn.kahoot.it/controller/v2/favicon.png';
+        link.href = 'https://assets-cdn.kahoot.it/controller/v2/favicon.ico';
         document.title = "Enter Game PIN - Kahoot!"
     }
 }
