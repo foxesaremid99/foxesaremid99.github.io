@@ -17,7 +17,22 @@ function script(text) {
 // ====================================
 
 
-  script("Injected script 1/4");
+var gaenabled = window.localStorage.getItem("ga");
+if (gaenabled == "false") {
+  script("Skipped GA injection because it is disabled by the user.");
+} else {
+  const gascript = document.createElement("script");
+  gascript.setAttribute("async", "");
+  gascript.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=G-X1063DX5JG");
+  const inlinegascript = document.createElement("script");
+  inlinegascript.innerHTML = `window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-X1063DX5JG');`;
+  document.head.append(gascript, inlinegascript);
+  script("Injected script 1/3");
+}
+
 
 
 const tabCloak = document.createElement("div");

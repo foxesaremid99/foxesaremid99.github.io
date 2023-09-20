@@ -256,6 +256,11 @@
     "name": "AdVenture Capitalist"
   },
   {
+    "url": "admin/",
+    "imageSrc": "admin/unamed.png",
+    "name": "Admin"
+  },
+  {
     "url": "./fnf/",
     "imageSrc": "https://raw.githubusercontent.com/nate-games/ng-assets/main/fnf/game/fnf.avif",
     "name": "Friday Night Funkin'"
