@@ -1,5 +1,5 @@
 services:
   - type: web
-    name: echo-website
+    name: hypackel-website
     env: static
     staticPublishPath: .
