@@ -23,12 +23,12 @@ if (gaenabled == "false") {
 } else {
   const gascript = document.createElement("script");
   gascript.setAttribute("async", "");
-  gascript.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=G-X1063DX5JG");
+  gascript.setAttribute("src", "https://www.googletagmanager.com/gtag/js?id=G-9N6C11NZ79");
   const inlinegascript = document.createElement("script");
-  inlinegascript.innerHTML = `window.dataLayer = window.dataLayer || [];
+  inlinegascript.innerHTML = ` window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'G-X1063DX5JG');`;
+  gtag('config', 'G-9N6C11NZ79');`;
   document.head.append(gascript, inlinegascript);
   script("Injected script 1/3");
 }
