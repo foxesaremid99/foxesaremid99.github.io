@@ -1,36 +1,26 @@
-name: Sync Changes to S3
+name: Deploy to S3
 
 on:
   push:
     branches:
-      - Master # Ensure this matches the exact branch name (case-sensitive)
+      - Master
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Repository
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Set up AWS CLI
-      uses: aws-actions/configure-aws-credentials@v1
-      with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: us-east-1 # Change this to your desired AWS region
+      - name: Configure AWS credentials
+        run: |
+          aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws configure set region us-east-1  # Set your AWS region here
+        env:
+          AWS_DEFAULT_REGION: us-east-1  # Set your AWS region here
 
-    - name: List Changed Files
-      id: list-changed-files
-      run: |
-        git fetch --depth=1 origin +refs/tags/*:refs/tags/* # Ensure you fetch the latest tags
-        changed_files=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})
-        echo "::set-output name=files::$changed_files"
-
-    - name: Sync Changed Files to S3
-      run: |
-        aws s3 sync . s3://hypackelgames/ --exclude "*" --include $(echo ${{ steps.list-changed-files.outputs.files }} | tr '\n' ' ')
-
-    - name: Cleanup
-      run: |
-        git clean -xdf
+      - name: Deploy to S3
+        run: |
+          aws s3 sync . s3://hypackelgames/ --exclude ".git/*"  # Adjust the exclude pattern as needed
