@@ -3,7 +3,7 @@ name: Sync Changes to S3
 on:
   push:
     branches:
-      - Master # Change this to your desired branch
+      - Master # Ensure this matches the exact branch name (case-sensitive)
 
 jobs:
   deploy:
@@ -23,6 +23,7 @@ jobs:
     - name: List Changed Files
       id: list-changed-files
       run: |
+        git fetch --depth=1 origin +refs/tags/*:refs/tags/* # Ensure you fetch the latest tags
         changed_files=$(git diff --name-only ${{ github.event.before }} ${{ github.sha }})
         echo "::set-output name=files::$changed_files"
 
