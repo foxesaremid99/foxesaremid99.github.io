@@ -1,4 +1,4 @@
-name: yaml
+name: none
 
 on:
   push:
