@@ -25,7 +25,7 @@ jobs:
         id: changed-files
         run: |
           git fetch --all
-          git diff --name-only ${{ github.event.before }} ${{ github.sha }} > changed-files.txt || true
+          git diff --name-only HEAD^ HEAD > changed-files.txt || true
 
       - name: Upload changed files as artifacts
         uses: actions/upload-artifact@v2
