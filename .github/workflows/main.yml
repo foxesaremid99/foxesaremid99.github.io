@@ -1,9 +1,9 @@
-name: Upload to s3
+name: Deploy to S3
 
 on:
   push:
     branches:
-      - Master
+      - Master  # Use the correct case for your branch name
 
 jobs:
   deploy:
@@ -12,12 +12,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-
-      - name: Install AWS CLI
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y python3-pip
-          pip3 install awscli --upgrade --user
 
       - name: Configure AWS credentials
         run: |
@@ -29,7 +23,7 @@ jobs:
 
       - name: List changed files
         run: |
-          git diff --name-only ${{ github.event.before }} ${{ github.sha }} > changed-files.txt
+          git diff --name-only ${{ github.event.before || github.sha }}..${{ github.sha }} > changed-files.txt
 
       - name: Delete changed files from S3
         run: |
