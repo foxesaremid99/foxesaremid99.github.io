@@ -39,5 +39,5 @@ jobs:
           name: changed-files
 
       - name: Upload new files to S3
-        run: |
-          cat changed-files/changed-files.txt | xargs -I % aws s3 cp "%" "s3://hypackelgames/%"
+      run: |
+        cat changed-files.txt | xargs -I % aws s3 cp "%" "s3://hypackelgames/%"
