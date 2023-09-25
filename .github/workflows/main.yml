@@ -3,7 +3,7 @@ name: Sync Changes to S3
 on:
   push:
     branches:
-      - main # Change this to your desired branch
+      - Master # Change this to your desired branch
 
 jobs:
   deploy:
