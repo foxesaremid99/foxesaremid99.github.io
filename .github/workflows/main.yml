@@ -1,37 +1,42 @@
-# name: Upload to S3
+name: none
 
-# on:
-#   push:
-#     branches:
-#       - Master
+on:
+  push:
+    branches:
+      - main
 
-# jobs:
-#   deploy:
-#     runs-on: ubuntu-latest
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
 
-#     steps:
-#       - name: Checkout code
-#         uses: actions/checkout@v2
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-#       - name: Install AWS CLI
-#         run: |
-#           sudo apt-get update
-#           sudo apt-get install -y python3-pip
-#           pip3 install awscli --upgrade --user
+      - name: Install AWS CLI
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y python3-pip
+          pip3 install awscli --upgrade --user
 
-#       - name: Configure AWS credentials
-#         env:
-#           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-#           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-#         run: |
-#           aws configure set aws_access_key_id $AWS_ACCESS_KEY_ID
-#           aws configure set aws_secret_access_key $AWS_SECRET_ACCESS_KEY
-#           aws configure set default.region us-east-1
+      - name: Configure AWS credentials
+        run: |
+          aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws configure set aws_secret_access_key ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws configure set region us-east-1  # Set your AWS region here
+        env:
+          AWS_DEFAULT_REGION: us-east-1  # Set your AWS region here
 
-#       - name: Delete contents of github1 folder in S3
-#         run: |
-#           aws s3 rm s3://hypackelgames/ --recursive
+      - name: List changed files
+        run: |
+          git diff --name-only ${{ github.event.before }} ${{ github.sha }} > changed-files.txt
 
-#       - name: Upload files to S3
-#         run: |
-#           aws s3 cp . s3://hypackelgames/ --recursive
+      - name: Delete changed files from S3
+        run: |
+          while read -r file; do
+            aws s3 rm "s3://hypackelgames/$file"
+          done < changed-files.txt
+
+      - name: Upload new files to S3
+        run: |
+          git ls-files | xargs -I % aws s3 cp "%" "s3://hypackelgames/%" --acl public-read
