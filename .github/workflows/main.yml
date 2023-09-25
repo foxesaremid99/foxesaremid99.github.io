@@ -28,7 +28,7 @@ jobs:
 
     - name: Sync Changed Files to S3
       run: |
-        aws s3 sync . s3://your-s3-bucket/ --exclude "*" --include $(echo ${{ steps.list-changed-files.outputs.files }} | tr '\n' ' ')
+        aws s3 sync . s3://hypackelgames/ --exclude "*" --include $(echo ${{ steps.list-changed-files.outputs.files }} | tr '\n' ' ')
 
     - name: Cleanup
       run: |
