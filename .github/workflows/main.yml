@@ -3,7 +3,7 @@ name: Deploy to S3
 on:
   push:
     branches:
-      - Master  # Use the correct case for your branch name
+      - Master
 
 jobs:
   deploy:
@@ -22,8 +22,10 @@ jobs:
           AWS_DEFAULT_REGION: us-east-1  # Set your AWS region here
 
       - name: List changed files
+        id: changed-files
         run: |
-          git log --name-only -n 1 --pretty=format:'' > changed-files.txt
+          git fetch --all
+          git diff-tree --no-commit-id --name-only -r ${{ github.event.before }} ${{ github.sha }} > changed-files.txt || true
 
       - name: Delete changed files from S3
         run: |
