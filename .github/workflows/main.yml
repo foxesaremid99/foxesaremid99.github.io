@@ -21,12 +21,9 @@ jobs:
         env:
           AWS_DEFAULT_REGION: us-east-1  # Set your AWS region here
 
-      - name: Fetch latest changes
-        run: git fetch
-
       - name: List changed files
         run: |
-          git diff --name-only HEAD^..HEAD > changed-files.txt
+          git log --name-only -n 1 --pretty=format:'' > changed-files.txt
 
       - name: Delete changed files from S3
         run: |
