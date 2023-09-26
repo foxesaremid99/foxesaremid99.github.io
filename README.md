@@ -1,6 +1,6 @@
 # hypackel.github.io
-
-Welcome to hypackel.github.io, your best option for unblocked games on the internet. This is the GitHub repo which is used to host the website. If you want to use the games on here on your website, please message me on discord and we can talk! [Discord](https://discord.gg/eHqQ84MEkD)
+ 
+Welcome to hypackel.github.io, your best option for unblocked games on the internet. This is the GitHub repo which is used to host the website. If you want to use the games on here on your website, please message me on Discord and we can talk! [Discord](https://discord.gg/eHqQ84MEkD)
 
 <p align="center"><img src="https://invidget.switchblade.xyz/eHqQ84MEkD?theme=dark)](https://discord.gg/eHqQ84MEkD" alt="discord"></img></p>
 
@@ -14,7 +14,7 @@ Welcome to hypackel.github.io, your best option for unblocked games on the inter
 - Site-wide tab cloaking
 - Easy to deploy
 - Clean UI
-- Cross platform
+- Cross-platform
 - Easy to use
 - Light on host resources
 - And so much more!
@@ -30,7 +30,7 @@ You can access this project using the link below
 
 
 > **Note**
-> If you have any problems please open a issue!
+> If you have any problems please open an issue!
 
 ## Contributers
 
@@ -66,7 +66,7 @@ Please adhere to this project's [`code of conduct`](https://github.com/hypackel/
 
 ## Run Locally
 
-First clone the project using command line
+First, clone the project using the command line
 
 ```bash
 git clone https://github.com/hypackel/hypackel.github.io.git
@@ -78,7 +78,7 @@ or if you have GitHub CLI
 gh repo clone hypackel/hypackel.github.io
 ```
 
-This project does not require any backendservers, for the best expericance, I suggest using [XAMPP](https://www.apachefriends.org/) and cloning the repo into the Apache Server directory at `C:\xampp\htdocs` (for windows) and set the port to something like 8080 and open up a browser and point to `localhost:8080`
+This project does not require any backend servers, for the best experience, I suggest using [XAMPP](https://www.apachefriends.org/) and cloning the repo into the Apache Server directory at `C:\xampp\htdocs` (for Windows) and set the port to something like 8080 and open up a browser and point to `localhost:8080`
 
 > **Warning**
 > Please make your you know what you are doing, you could delete your entire drive if you are not careful!
@@ -88,7 +88,7 @@ This project does not require any backendservers, for the best expericance, I su
 
 © Hypackel, 2023. Unauthorized use and/or duplication of this material without permission from Echo is strictly prohibited. Excerpts and links may be used, provided that clear credit is given with a link to the original content.
 
-This code is licensed under the **Apache-2.0 License**. I ask you that you do not copy the code in the repo what-so-ever; I take time to build this and I do not need someone just yoinking all of my games for ones site. If you have any questions please open a issue!
+This code is licensed under the **Apache-2.0 License**. I'd like to ask you that you do not copy the code in the repo whatsoever; I take time to build this and I do not need someone just yoinking all of my games for another site. If you have any questions please open an issue!
 
 > **Note**
 > You can view the full license [here](https://github.com/hypackel/hypackel.github.io/blob/main/LICENSE.md)!
