@@ -1,5 +1,5 @@
 .rainbow_text_animated {
-    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
+    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -8,7 +8,7 @@
 }
 
 @keyframes rainbow_animation {
-    0%,100% {
+    0%, 100% {
         background-position: 0 0;
     }
 
@@ -17,22 +17,17 @@
     }
 }
 
-  .banner-head {
+.banner-head {
     height: 5.5em;
     width: 100%;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    background-image: linear-gradient(124deg, rgba(255, 4, 0, .5),
-        rgba(232, 29, 29, .5),
-        rgba(232, 183, 29, .5),
-        rgba(227, 232, 29, .5),
-        rgba(29, 232, 64, .5),
-        rgba(29, 221, 232, .5),
-        rgba(43, 29, 232, .5),
-        rgba(221, 0, 243, .5),
-        rgba(221, 0, 243, .5));
+    background-image: linear-gradient(124deg, rgba(255, 4, 0, .7),
+            rgba(232, 29, 29, .7),
+            rgba(232, 183, 29, .7),
+            rgba(227, 232, 29, .7));
     position: absolute;
     /* background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3); */
     background-size: 1800% 1800%;
@@ -41,60 +36,66 @@
     -z-animation: rainbow 18s ease infinite;
     -o-animation: rainbow 18s ease infinite;
     animation: rainbow 18s ease infinite;
-  }
+}
 
-  @-webkit-keyframes rainbow {
+@-webkit-keyframes rainbow {
     0% {
-      background-position: 0% 82%
+        background-position: 0% 82%
     }
 
     50% {
-      background-position: 100% 19%
+        background-position: 100% 19%
     }
 
     100% {
-      background-position: 0% 82%
+        background-position: 0% 82%
     }
-  }
+}
 
-  @-moz-keyframes rainbow {
+@-moz-keyframes rainbow {
     0% {
-      background-position: 0% 82%
+        background-position: 0% 82%
     }
 
     50% {
-      background-position: 100% 19%
+        background-position: 100% 19%
     }
 
     100% {
-      background-position: 0% 82%
+        background-position: 0% 82%
     }
-  }
+}
 
-  @-o-keyframes rainbow {
+@-o-keyframes rainbow {
     0% {
-      background-position: 0% 82%
+        background-position: 0% 82%
     }
 
     50% {
-      background-position: 100% 19%
+        background-position: 100% 19%
     }
 
     100% {
-      background-position: 0% 82%
+        background-position: 0% 82%
     }
-  }
+}
 
-  @keyframes rainbow {
+@keyframes rainbow {
     0% {
-      background-position: 0% 82%
+        background-position: 0% 82%
     }
 
     50% {
-      background-position: 100% 19%
+        background-position: 100% 19%
     }
 
     100% {
-      background-position: 0% 82%
+        background-position: 0% 82%
     }
-  }
+}
+
+/* rgba(29, 232, 64, .7),
+        rgba(29, 221, 232, .7),
+        rgba(43, 29, 232, .7),
+        rgba(221, 0, 243, .7),
+        rgba(221, 0, 243, .7) */
